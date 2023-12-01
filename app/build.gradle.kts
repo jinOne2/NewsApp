@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.example.newapp"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.newapp"
@@ -34,6 +34,10 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    buildFeatures {
+        viewBinding =true
+    }
 }
 
 dependencies {
@@ -42,12 +46,13 @@ dependencies {
 
     implementation("com.tickaroo.tikxml:annotation:0.8.13")
     implementation("com.tickaroo.tikxml:core:0.8.13")
-    implementation("com.tickaroo.tikxml:retrofit-converter:0.8.15")
+    implementation("com.tickaroo.tikxml:retrofit-converter:0.8.13")
 
     kapt("com.tickaroo.tikxml:processor:0.8.13")
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
+
     implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     testImplementation("junit:junit:4.13.2")
