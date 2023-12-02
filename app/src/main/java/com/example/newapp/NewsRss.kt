@@ -21,7 +21,7 @@ data class RssChannel(
     @Element(name = "item")
     val items: List<NewsItem>? = null,
 
-)
+    )
 
 @Xml(name = "item")
 data class NewsItem(

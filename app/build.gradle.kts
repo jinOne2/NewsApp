@@ -47,11 +47,14 @@ dependencies {
     implementation("com.tickaroo.tikxml:annotation:0.8.13")
     implementation("com.tickaroo.tikxml:core:0.8.13")
     implementation("com.tickaroo.tikxml:retrofit-converter:0.8.13")
+    implementation("com.github.bumptech.glide:glide:4.16.0")
 
     kapt("com.tickaroo.tikxml:processor:0.8.13")
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
+
+    implementation("org.jsoup:jsoup:1.17.1")
 
     implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
